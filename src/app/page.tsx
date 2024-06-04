@@ -107,7 +107,7 @@ export default function Home() {
 
   return (
     <>
-      <h1>日本の都道府県</h1>
+      <h1 className="prefecture_title">日本の都道府県</h1>
       {error && <p>{error}</p>}
       <PopulationTypeSelector
         selectedType={selectedType}
@@ -120,7 +120,7 @@ export default function Home() {
       />
       {selectedPrefCodes.length > 0 && (
         <div>
-          <h2>人口データ: {selectedType}</h2>
+          <h2 className="population_title">人口データ: {selectedType}</h2>
           <PopulationChart
             selectedPrefCodes={selectedPrefCodes}
             populationData={populationData}

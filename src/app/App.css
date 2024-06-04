@@ -1,3 +1,7 @@
+.population_button {
+  margin-left: 10px;
+}
+
 .flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -7,4 +11,10 @@
 .flex-item {
   align-items: center;
   margin-left: 15px;
+}
+
+.prefecture_title,
+.population_title {
+  margin-top: 10px;
+  margin-left: 10px;
 }

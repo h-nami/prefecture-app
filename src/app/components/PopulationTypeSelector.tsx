@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from './PopulationTypeSelector.module.css';
 
 interface PopulationTypeSelectorProps {
   selectedType: string;
@@ -12,7 +11,7 @@ const PopulationTypeSelector: React.FC<PopulationTypeSelectorProps> = ({ selecte
   return (
     <div>
       {populationTypes.map(type => (
-        <button className={styles.population_button}
+        <button className="population_button"
           key={type}
           onClick={() => onSelectType(type)}
           style={{ fontWeight: selectedType === type ? 'bold' : 'normal' }}

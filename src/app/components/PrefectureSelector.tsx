@@ -1,5 +1,4 @@
 import React from "react";
-import styles from './PopulationTypeSelector.module.css';
 
 interface Prefecture {
   prefCode: number;
@@ -21,7 +20,7 @@ const PrefectureSelector: React.FC<PrefectureSelectorProps> = ({
     <div className="flex-container">
       {prefectures.map((pref) => (
         <div key={pref.prefCode} className="flex-item">
-          <label className={styles.prefecture_box}>
+          <label className="prefecture_box">
             <input
               type="checkbox"
               name={`pref-${pref.prefCode}`}
